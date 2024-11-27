@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter e o Cálice de Fogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Harry Potter e o Cálice de Fogo</h1>
+        <p>Participe do Torneio Tribruxo, enfrente dragões, nade com sereianos e descubra os mistérios do Cálice de Fogo.</p>
+        <button onclick="scrollToSection('#about')">Saiba Mais</button>
+    </header>
+
+    <section id="about" class="content">
+        <h2>Sobre o Filme</h2>
+        <p>
+            No quarto ano de Harry em Hogwarts, o Cálice de Fogo seleciona inesperadamente seu nome como um dos
+            participantes do perigoso Torneio Tribruxo. Ele enfrentará desafios que colocarão suas habilidades
+            mágicas e coragem à prova, enquanto o retorno de Voldemort se aproxima cada vez mais.
+        </p>
+    </section>
+
+    <section id="trailer" class="content">
+        <h2>Assista ao Trailer</h2>
+        <div class="trailer-container">
+            <iframe src="https://www.youtube.com/embed/3EGojp4Hh6I" title="Trailer de Harry Potter e o Cálice de Fogo"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="gallery" class="content">
+        <h2>Galeria de Imagens</h2>
+        <div class="gallery">
+            <img src="./imagens/castle.jpg" alt="Cena do filme 1">
+            <img src="./imagens/harry_potter.jpg" alt="Cena do filme 2">
+            <img src="./imagens/dragao.jpg" alt="Cena do filme 3">
+            <img src="./imagens/xadrez.jpg" alt="Cena do filme 4">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mundo Bruxo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
